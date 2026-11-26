@@ -173,3 +173,6 @@ POST /compras/{id}/cancelar — liberam o assento para nova venda.
 PATCH /ingressos/{id} — troca de assento na mesma sessão.
 POST /sessoes/{id}/cancelar — alteração na programação: cancela a sessão e todos os seus ingressos.
 POST /validacoes — registro da entrada (1:1 com o ingresso).
+
+## Modelo relacional
+no file em erdplus.png
