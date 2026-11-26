@@ -11,7 +11,6 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# '%' precisa ser escapado porque o ConfigParser usa interpolação.
 config.set_main_option("sqlalchemy.url", settings.DATABASE_URL.replace("%", "%%"))
 target_metadata = SQLModel.metadata
 
